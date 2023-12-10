@@ -11,7 +11,7 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 export function Iphone(props) {
-  const { nodes, materials } = useGLTF("../../../public/models/iphone.glb");
+  const { nodes, materials } = useGLTF("models/iphone.glb");
   return (
     <group {...props} dispose={null}>
       <group scale={0.01}>
@@ -138,4 +138,4 @@ export function Iphone(props) {
   );
 }
 
-useGLTF.preload("../../../public/models/iphone.glb");
+useGLTF.preload("models/iphone.glb");
